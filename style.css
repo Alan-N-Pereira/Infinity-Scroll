@@ -1,5 +1,7 @@
-/* Global Style */
+/* Global Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* Global Style */
 * {
 	margin: 0;
 	padding: 0;
@@ -8,4 +10,46 @@
 
 body {
 	min-height: 100vh;
+	font-family: 'Bebas Neue', cursive;
+	background: whitesmoke;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-size: 40px;
+	letter-spacing: 5px;
+}
+
+/* Loader */
+
+.loader-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(255, 255, 255, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader {
+	border: 16px solid #000000;
+	border-top: 16px solid #c9351a;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
